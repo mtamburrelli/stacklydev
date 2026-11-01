@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StacklyDev | Digital Innovation Without Borders</title>
+  <meta name="description" content="StacklyDev is a global technology company based in Panama: web development, custom software, mobile apps, RPA, AI agents, smart contracts, digital marketing and SEO." />
+  <meta name="theme-color" content="#07090d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="StacklyDev home">STACKLY<span>dev</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#services">services</a>
+      <a href="#approach">approach</a>
+      <a href="#stack">stack</a>
+      <a href="#contact" class="btn btn-small">start a project</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> // Panama → the world</p>
+        <h1>Digital innovation<br /><span class="grad">without borders.</span></h1>
+        <p class="lead">
+          We combine software engineering, automation and artificial intelligence to turn ideas into practical,
+          scalable, high-impact technology.
+        </p>
+        <div class="cta">
+          <a href="#contact" class="btn">Start a project <span aria-hidden="true">→</span></a>
+          <a href="#services" class="btn btn-ghost">Explore services</a>
+        </div>
+        <p class="hero-note"><span class="c-green">$</span> built in Panama. connected to the world<span class="caret">_</span></p>
+      </div>
+
+      <div class="window hero-window" aria-label="Code sample">
+        <div class="window-bar">
+          <i class="d r"></i><i class="d y"></i><i class="d g"></i>
+          <span class="file">stacklydev.js</span>
+        </div>
+        <pre class="code"><code id="hero-code" aria-live="off"></code></pre>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <header class="section-head reveal">
+        <p class="eyebrow">// 01 services</p>
+        <h2>From streamlined operations to <span class="grad">digital products.</span></h2>
+        <p class="muted">Pick a service to see how we think about it, in code.</p>
+      </header>
+
+      <div class="services reveal">
+        <div class="tabs" role="tablist" aria-label="Services" id="tabs"></div>
+        <div class="window panel">
+          <div class="window-bar">
+            <i class="d r"></i><i class="d y"></i><i class="d g"></i>
+            <span class="file" id="panel-file">file</span>
+            <button class="copy" id="copy" type="button">copy</button>
+          </div>
+          <pre class="code numbered"><code id="panel-code"></code></pre>
+          <p class="panel-desc" id="panel-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section" id="approach">
+      <header class="section-head reveal">
+        <p class="eyebrow">// 02 approach</p>
+        <h2>Every project ships like a <span class="grad">clean commit history.</span></h2>
+      </header>
+
+      <ol class="log reveal">
+        <li>
+          <span class="hash">a1f3c9e</span>
+          <div><h3>discover</h3><p>We learn your business, your users and the problem worth solving.</p></div>
+        </li>
+        <li>
+          <span class="hash">b72d04a</span>
+          <div><h3>design</h3><p>Architecture and interfaces planned for efficiency and room to grow.</p></div>
+        </li>
+        <li>
+          <span class="hash">c9e51b7</span>
+          <div><h3>build</h3><p>Clean, tested code delivered in short iterations you can see and react to.</p></div>
+        </li>
+        <li>
+          <span class="hash">d04a8f2</span>
+          <div><h3>scale</h3><p>Automate, measure and improve to drive sustainable growth.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- STACK MARQUEE -->
+    <section class="marquee" id="stack" aria-label="Technologies">
+      <div class="track" id="track"></div>
+    </section>
+
+    <!-- GLOBAL -->
+    <section class="section split">
+      <div class="reveal">
+        <p class="eyebrow">// 03 global by default</p>
+        <h2>Great technology <span class="grad">has no borders.</span></h2>
+        <p class="muted">
+          We partner with businesses, entrepreneurs and organizations around the globe to create smarter, more
+          efficient and future-ready digital experiences.
+        </p>
+      </div>
+      <div class="window reveal">
+        <div class="window-bar">
+          <i class="d r"></i><i class="d y"></i><i class="d g"></i>
+          <span class="file">connect.json</span>
+        </div>
+        <pre class="code"><code id="json-code"></code></pre>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">// 04 contact</p>
+        <h2>Have an idea? <span class="grad">Let's compile it.</span></h2>
+        <form id="form" novalidate>
+          <label>
+            <span>name</span>
+            <input name="name" type="text" autocomplete="name" placeholder="Ada Lovelace" required />
+          </label>
+          <label>
+            <span>email</span>
+            <input name="email" type="email" autocomplete="email" placeholder="ada@company.com" required />
+          </label>
+          <label class="full">
+            <span>message</span>
+            <textarea name="message" rows="4" placeholder="Tell us what you want to build..." required></textarea>
+          </label>
+          <button class="btn full" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form-status full" id="status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#top">STACKLY<span>dev</span></a>
+    <p class="muted">&copy; <span id="year"></span> StacklyDev. Built in Panama. Connected to the world.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
